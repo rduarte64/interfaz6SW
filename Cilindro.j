@@ -30,6 +30,9 @@
     freturn 	
 .end method
 
+.method area()F
+    ; agregar las sentecias para hacer el metodo area()F
+.end method
 
 
 
