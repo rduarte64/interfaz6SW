@@ -30,8 +30,20 @@
     freturn 	
 .end method
 
-.method area()F
-    ; agregar las sentecias para hacer el metodo area()F
+.method public area()F
+.limit stack 3
+.limit locals 3
+	aload_0
+	invokespecial Circulo/area()F 
+	ldc 2.0
+	fmul		; ya tenemos el area de las 2 "tapas"
+	aload_0
+	invokespecial Circulo/perimetro()F 
+	aload_0
+	getfield Cilindro/altura F
+    fmul      ; Ya tenemos el area lateral
+	fadd		; Sumamos el area lateral mas las 2 tapas
+	freturn		; devuelde el resultado a quien lo llamó
 .end method
 
 
