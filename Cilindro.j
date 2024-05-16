@@ -18,6 +18,8 @@
    return
    
 .end method
+; Agregar dos metodos nuevos que estan declarados en la interfaz SubConicas.j  que son baseArea()F  y   lateralArea()F 
+; 
 
 .method volumen()F 
 .limit stack 3
