@@ -19,7 +19,7 @@
    
 .end method
 
-.method volumen()F 
+.method public volumen()F 
 .limit stack 3
 .limit locals 2
     aload_0
