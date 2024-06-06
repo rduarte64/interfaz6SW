@@ -32,9 +32,14 @@
   ldc 5.0
   ldc 10.00
   invokespecial Cilindro/<init>(FF)V
-  invokevirtual Cilindro/volumen()F 
+  astore_1
+  aload_1
+  invokevirtual Cilindro/area()F 
   jsr PrintMe  
-  
+  aload_1
+  invokevirtual Cilindro/volumen()F
+    jsr PrintMe  
+
   return
   
 ; define the PrintMe subroutine ...
@@ -49,6 +54,3 @@ PrintMe:
   
   
 .end method
-  
-  
-  
